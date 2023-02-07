@@ -1,3 +1,135 @@
+/*//////////  TASK PAGE  /////////////*/
+.task-page{
+  position: absolute;
+  width: 70vw;
+  height: 78vh;
+  top:11vh;
+  left: 15vw;
+  background: gray;
+}
+
+/*////////// DELETE PAGE //////////////*/
+.deleteTask-page{
+  position: absolute;
+  width: 70vw;
+  height: 78vh;
+  top:11vh;
+  left: 15vw;
+  background: gray;
+}
+
+/*///////// ADD TASK PAGE ///////////////////*/
+.addTask-page{
+  position: absolute;
+  width: 70vw;
+  height: 78vh;
+  top:11vh;
+  left: 15vw;
+  background: gray;
+  
+} 
+.addTask-page-enterBox{
+display: flex;
+flex-direction:column;
+position:absolute;
+width: 60vw;
+left:5vw
+}
+
+
+/*////////// SUMMARY PAGE ///////////////////*/
+.summary-page{
+  background:transparent;
+  position: absolute;
+  width: 70vw;
+  height: 78vh;
+  top: 11vh;
+  left:15vw;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+}
+.summary-page-task{
+    background: yellowgreen;
+    
+}
+.summary-page-task-box{
+  position: absolute;
+  width: 30vw;
+  height: 28vh;
+  background: wheat;
+}
+
+
+
+/*///////////MAIN PAGE BAR TOP /////////////////*/
+.mainPage-bar-top{
+  background: rgb(161, 86, 86);
+  position: absolute;
+  width: 100vw;
+  height: 10vh;
+}
+.mainPage-bar-top h1{
+  color: rgb(95, 0, 11);
+  font-style:oblique;
+  border-color: aqua;
+}
+
+/*/////////// MAIN PAGE BAR BOTTON /////////////*/
+
+.mainPage{
+  background: faf5ff;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+}
+
+.mainPage-bar-botton{
+  background: rgb(161, 86, 86);
+  position: absolute;
+  width: 100vw;
+  height: 10vh;
+  bottom: 0;
+}
+.mainPage-bar-botton img{
+  position: absolute;
+}
+.mainPage-bar-botton-avatar{
+  top:0vh;
+  left: 45vw;  
+  border-radius: 100%;
+  height: 7vh;
+}
+
+.mainPage-bar-botton-calendar{
+ top:1vh;
+ left:20vw;
+ height: 5vh;
+}
+
+.mainPage-bar-botton-addTask{
+  top: 1vh;
+  left:5vw;
+  height: 5vh;
+}
+
+.mainPage-bar-botton-deleteTask{
+  top:1vh;
+  right: 5vw;
+  height: 5vh;
+}
+.mainPage-bar-botton-task{
+  top:1vh;
+  right: 20vw;
+  height: 5vh;
+}
+
+
+
+
+
+
+/*////////////// SERVER DATA ///////////*/
+
 .main-page-enterData{
   display: flex;
   justify-content: center;

@@ -1,0 +1,24 @@
+ [
+    {
+      "id": 1,
+      "name": "ir al gimnasio",
+      "type": "ejercicio",
+      "day":"todos los dias",
+      "description":" ir al gimnasio a entrenar todos los dias una hora"
+    },
+    {
+      "id": 1,
+      "name": "ir al gimnasio",
+      "type": "ejercicio",
+      "day":"todos los dias",
+      "description":" ir al gimnasio a entrenar todos los dias una hora"
+    },
+    {
+      "id": 1,
+      "name": "ir al gimnasio",
+      "type": "ejercicio",
+      "day":"todos los dias",
+      "description":" ir al gimnasio a entrenar todos los dias una hora"
+    }
+    
+  ]

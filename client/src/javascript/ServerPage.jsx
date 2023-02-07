@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import Axios from 'axios'
 
-function MainPage() {
+function ServerPage() {
 
     const [taskName, setTaskName] = useState('')
     const [taskType, setTaskType] = useState('')
@@ -48,4 +48,4 @@ function MainPage() {
     )
 }
 
-export default MainPage
+export default ServerPage
