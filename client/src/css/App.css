@@ -7,6 +7,10 @@
   left: 15vw;
   background: gray;
 }
+.task-page-box{
+  /* display: grid;
+  grid-template-columns: repeat(5,1fr); */
+}
 
 /*////////// DELETE PAGE //////////////*/
 .deleteTask-page{
