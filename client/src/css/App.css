@@ -1,3 +1,5 @@
+
+
 /*//////////  TASK PAGE  /////////////*/
 .task-page{
   position: absolute;
@@ -5,11 +7,23 @@
   height: 78vh;
   top:11vh;
   left: 15vw;
-  background: gray;
+  background:transparent;
 }
-.task-page-box{
-  /* display: grid;
-  grid-template-columns: repeat(5,1fr); */
+.task-page h1{
+  position: absolute;
+  top:10vh;
+  left:28vw;
+}
+.task-page-box-delete{
+ cursor:pointer;
+}
+.task-page-box {
+  position: absolute;
+  width: 60vw;
+  height: 50vh;
+  top:20vh;
+  left:8vw;
+  overflow: auto;
 }
 
 /*////////// DELETE PAGE //////////////*/
@@ -19,7 +33,26 @@
   height: 78vh;
   top:11vh;
   left: 15vw;
-  background: gray;
+  background:transparent;
+}
+.deleteTask-page h1{
+  position: absolute;
+  top:10vh;
+  left:28vw;
+}
+.deleteTask-page-box-delete{
+ cursor:pointer;
+}
+.deleteTask-page-box {
+  position: absolute;
+  width: 60vw;
+  height: 50vh;
+  top:20vh;
+  left:8vw;
+  overflow: auto;
+}
+.deleteTask-page-box img {
+  width: 2vw;
 }
 
 /*///////// ADD TASK PAGE ///////////////////*/
@@ -29,43 +62,128 @@
   height: 78vh;
   top:11vh;
   left: 15vw;
-  background: gray;
+  background: transparent;
+  }
   
-} 
+  .addTask-page h1{
+    position: absolute;
+    top: 10vh;
+    left: 26vw;
+  }
+
 .addTask-page-enterBox{
 display: flex;
 flex-direction:column;
 position:absolute;
 width: 60vw;
-left:5vw
+left:5vw;
+top:23vh
+}
+
+.addTask-page-enterBox-name{
+position: absolute;
+top:3vh;
+left:8vw;
+width: 20vw;
+height: 5vh;
+}
+.addTask-page-enterBox-day{
+  position: absolute;
+top:3vh;
+left:33vw;
+width: 20vw;
+height: 5vh;
+}
+.addTask-page-enterBox-description{
+  position: absolute;
+top:10vh;
+left:8vw;
+width: 45vw;
+height: 20vh;
+}
+
+.addTask-page-enterBox img{
+  position: absolute;
+  top:40vh;
+  left:50vw;
+  width: 3vw;
+  cursor: pointer;
 }
 
 
 /*////////// SUMMARY PAGE ///////////////////*/
+
+.main-summary-page{
+  background:transparent;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+ 
+}
+
+.summary-page-bar-top{
+  background: rgb(161, 86, 86);
+  position: absolute;
+  width: 100vw;
+  height: 15vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.summary-page-bar-top h1{
+  position: absolute;
+  color: rgb(95, 0, 11);
+  font-style:oblique;
+  border-color: aqua; 
+}
+.summary-page-bar-top img{
+  position: absolute;
+  border-radius: 100%;
+  right: 8vw;
+  top:2vh;
+  width: 5vw;
+}
+
+
 .summary-page{
   background:transparent;
   position: absolute;
-  width: 70vw;
-  height: 78vh;
-  top: 11vh;
-  left:15vw;
+  width: 60vw;
+  height: 75vh;
+  top: 15vh;
+  left:20vw;
   display: grid;
   grid-template-columns: repeat(2,1fr);
+  
 }
 .summary-page-task{
-    background: yellowgreen;
-    
+ display: flex;
+ align-items: center;
+ justify-content: center;     
 }
-.summary-page-task-box{
-  position: absolute;
-  width: 30vw;
-  height: 28vh;
-  background: wheat;
+.summary-page-addTask{
+  display: flex;
+  align-items: center;
+  justify-content: center;  
+}
+.summary-page-calendar{
+  display: flex;
+  align-items: center;
+  justify-content: center;  
+}
+.summary-page-deleteTask{
+  display: flex;
+  align-items: center;
+  justify-content: center;  
+}
+.summary-page img{
+  width: 10vw;
 }
 
 
 
-/*///////////MAIN PAGE BAR TOP /////////////////*/
+
+/*///////////MAIN PAGE  /////////////////*/
 .mainPage-bar-top{
   background: rgb(161, 86, 86);
   position: absolute;
@@ -78,10 +196,10 @@ left:5vw
   border-color: aqua;
 }
 
-/*/////////// MAIN PAGE BAR BOTTON /////////////*/
+
 
 .mainPage{
-  background: faf5ff;
+  background: transparent;
   position: absolute;
   width: 100vw;
   height: 100vh;
@@ -128,7 +246,13 @@ left:5vw
 }
 
 
-
+.fondo-app{
+  position:absolute;
+  width: 100vw;
+  height: 100vh;
+  left: 0vw;
+  top:0vh; 
+}
 
 
 

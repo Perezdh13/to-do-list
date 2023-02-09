@@ -1,11 +1,32 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom';
-import data from '../CRUD/data.json'
+import check from '../img/check-mark.png'
 
 function AddTask() {
- let json = {data}
-console.info(json)
-    
+    let tasks = JSON.parse(localStorage.getItem("tasks")) || []
+
+    const [task, setTasks] = useState([...tasks])
+    const [name, setName] = useState("");
+    const [day, setDay] = useState("");
+    const [description, setDescription] = useState("");
+   
+
+
+
+
+
+    function addTask() {
+        setTasks([...task, { id: task.length + 1, Name: name, Day: day, Description: description }]);
+        setName("");
+        setDay("");
+        setDescription("");
+    }
+
+    useEffect(() => {
+        localStorage.setItem("tasks", JSON.stringify(task));
+    }, [task]);
+
+
 
     let navigate = useNavigate()
     useEffect(() => {
@@ -14,19 +35,19 @@ console.info(json)
         };
     }, [navigate]);
 
+
+
     return (
         <div className='addTask-page'>
             <h1>Add New Task</h1>
             <div className='addTask-page-enterBox'>
-                <label>task Name</label>
-                <input type='text' name='name' />
-                <label>Type</label>
-                <input type='text' name='type' />
-                <label>Day</label>
-                <input type='text' name='day' />
-                <label>Description</label>
-                <input type='text' name='description' />
-                <button >Submit</button>
+                
+                <input className='addTask-page-enterBox-name' value={name} placeholder='Name...' onChange={e => setName(e.target.value)} />
+                
+                <input className='addTask-page-enterBox-day' value={day} placeholder='Day...' onChange={e => setDay(e.target.value)} />
+    
+                <input className='addTask-page-enterBox-description' value={description} placeholder='Description......' onChange={e => setDescription(e.target.value)} />
+                <img src ={check} onClick={addTask}/>
             </div>
         </div>
 

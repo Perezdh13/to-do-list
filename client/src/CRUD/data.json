@@ -1,9 +1,8 @@
 [
-    {
-      "task": "",
-      "name": "",
-      "type": "",
-      "day":"",
-      "description": ""
-    }
-  ]
+  {
+    "id": 1,
+   "Name": "compra",
+    "Day": "10 de febrero",
+     "Description": "hacer compra del mes"
+  }
+]

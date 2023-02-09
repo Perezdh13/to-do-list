@@ -1,5 +1,10 @@
 import React, { useEffect } from 'react'
-import Task from './Task';
+import fondo from '../img/fondo.jpg'
+import avatar from '../img/avatar.png'
+import addTask from '../img/addTaskIMG.png'
+import calendar from '../img/calendarIMG.png'
+import deleteTask from '../img/deleteIMG.png'
+import task from '../img/TaskIMG.png'
 import { useNavigate } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 
@@ -14,31 +19,35 @@ function Summary() {
     }, [navigate]);
 
   return (
-    <div className='summary-page'>
+  <div className='main-summary-page'>
+  
+    <div className='summary-page-bar-top'>
+      <h1>Reminder</h1>
+      <img src={avatar} alt='avatar'/>
+    </div>
+    <div className='summary-page'>      
       <div className='summary-page-calendar'>
         <Link to='/calendar'>      
-          <h1>Calendar</h1>
+        <img className='' src={calendar} alt='calendar'/>
         </Link>  
       </div>
       <div className='summary-page-task'>
         <Link to='/task'>
-          <h1>Task</h1>
-          <div className='summary-page-task-box'>
-          
-          </div>
+        <img className='' src={task} alt='task'/>
         </Link>
       </div>
       <div className='summary-page-addTask'>
         <Link to='/addTask'>
-          <h1>Add Task</h1>
+        <img className='' src={addTask} alt='add task'/>
         </Link>
       </div>
       <div className='summary-page-deleteTask'>
         <Link to='/deleteTask'>
-          <h1>Delete Task</h1>
+        <img className='' src={deleteTask} alt='delete task'/>
         </Link>
       </div>
 
+    </div>
     </div>
   )
 }

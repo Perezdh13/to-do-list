@@ -5,7 +5,7 @@ import AddTask from './AddTask';
 import DeleteTask from './DeleteTask';
 import Summary from './Summary';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import ServerPage from './ServerPage';
+import fondo from '../img/fondo.jpg'
 
 import '../css/App.css';
 
@@ -15,7 +15,7 @@ function App() {
 
     {
       path: "/",
-      element: <><MainPage /><Summary /></>
+      element: <><Summary /></>
     },
     {
       path: "/calendar",
@@ -39,7 +39,7 @@ function App() {
 
   return (
     <div className="App">
-
+      <img className='fondo-app' src={fondo}/>
       <RouterProvider router={router} />
     </div>
   );
