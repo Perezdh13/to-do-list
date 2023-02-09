@@ -1,16 +1,14 @@
 import React, { useEffect, useState } from 'react'
 import "bootstrap/dist/css/bootstrap.min.css"
 import { useNavigate } from 'react-router-dom';
-import { Table, Button, } from "reactstrap"
-import { FaTimes} from 'react-icons/fa';
-import { FcCancel } from "react-icons/fa";
+import { Table } from "reactstrap"
 
 
 
 function Task() {
   let tasks = JSON.parse(localStorage.getItem("tasks")) || []
   
-  const [data, setData] = useState([...tasks])
+  const [data] = useState([...tasks])
   
   
 

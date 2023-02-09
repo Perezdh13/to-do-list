@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react'
-import fondo from '../img/fondo.jpg'
 import avatar from '../img/avatar.png'
 import addTask from '../img/addTaskIMG.png'
 import calendar from '../img/calendarIMG.png'

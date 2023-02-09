@@ -42,7 +42,7 @@ console.info(removeTask)
               <tr>
                 <td>{item.Name}</td>
                 <td>{item.Description}</td>
-                <td><img  src={deleteButton} onClick={() =>removeTask(item.id)}/></td>
+                <td><img  src={deleteButton} alt='delete' onClick={() =>removeTask(item.id)}/></td>
               </tr>
             ))}
           </tbody>

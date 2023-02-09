@@ -1,4 +1,12 @@
+/*////////// CALENDAR PAGE //////////*/
+.calendar-page img {
+  position: absolute;
+  width: 50vw;
+  height: 50vh;
+  top:25vh;
+  left:25vw;
 
+}
 
 /*//////////  TASK PAGE  /////////////*/
 .task-page{
@@ -12,7 +20,7 @@
 .task-page h1{
   position: absolute;
   top:10vh;
-  left:28vw;
+  left:26vw;
 }
 .task-page-box-delete{
  cursor:pointer;
@@ -38,7 +46,7 @@
 .deleteTask-page h1{
   position: absolute;
   top:10vh;
-  left:28vw;
+  left:26vw;
 }
 .deleteTask-page-box-delete{
  cursor:pointer;
@@ -68,12 +76,10 @@
   .addTask-page h1{
     position: absolute;
     top: 10vh;
-    left: 26vw;
+    left: 25vw;
   }
 
 .addTask-page-enterBox{
-display: flex;
-flex-direction:column;
 position:absolute;
 width: 60vw;
 left:5vw;
@@ -125,7 +131,7 @@ height: 20vh;
   background: rgb(161, 86, 86);
   position: absolute;
   width: 100vw;
-  height: 15vh;
+  height: 10vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -141,7 +147,7 @@ height: 20vh;
   border-radius: 100%;
   right: 8vw;
   top:2vh;
-  width: 5vw;
+  width: 50px;
 }
 
 
@@ -177,7 +183,7 @@ height: 20vh;
   justify-content: center;  
 }
 .summary-page img{
-  width: 10vw;
+  width: 80px;
 }
 
 

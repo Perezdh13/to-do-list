@@ -39,7 +39,7 @@ function App() {
 
   return (
     <div className="App">
-      <img className='fondo-app' src={fondo}/>
+      <img className='fondo-app' alt='fondo' src={fondo}/>
       <RouterProvider router={router} />
     </div>
   );

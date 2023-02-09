@@ -47,7 +47,7 @@ function AddTask() {
                 <input className='addTask-page-enterBox-day' value={day} placeholder='Day...' onChange={e => setDay(e.target.value)} />
     
                 <input className='addTask-page-enterBox-description' value={description} placeholder='Description......' onChange={e => setDescription(e.target.value)} />
-                <img src ={check} onClick={addTask}/>
+                <img src ={check}  alt='check'onClick={addTask}/>
             </div>
         </div>
 
