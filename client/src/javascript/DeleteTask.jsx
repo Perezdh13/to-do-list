@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom';
 import { Table} from "reactstrap"
-import deleteButton from '../img/cancel.png'
+import deleteButton from '../img/delete.png'
 
 
 function DeleteTask() {

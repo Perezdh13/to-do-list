@@ -24,9 +24,7 @@
   left: 26vw;
 }
 
-.task-page-box-delete {
-  cursor: pointer;
-}
+
 
 .task-page-box {
   position: absolute;
@@ -34,7 +32,18 @@
   height: 50vh;
   top: 20vh;
   left: 8vw;
+ overflow: auto;
+}
+.task-page-box input{
+  border: none;
   overflow: auto;
+  overflow-y: auto;
+}
+.task-page-box img{
+  position: absolute;
+  width: 2vw;
+  right:5vw;
+  cursor: pointer;
 }
 
 /*////////// DELETE PAGE //////////////*/

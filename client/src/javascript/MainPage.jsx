@@ -1,10 +1,10 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 import avatar from '../img/avatar.png'
-import addTask from '../img/addTask.png'
-import calendar from '../img/calendar.png'
-import deleteTask from '../img/deleteTask.png'
-import task from '../img/Task.png'
+import addTask from '../img/newAddTask.png'
+import calendar from '../img/newCalendar.png'
+import deleteTask from '../img/newDeleteTask.png'
+import task from '../img/newList.png'
 
 function MainPage() {
   return (
