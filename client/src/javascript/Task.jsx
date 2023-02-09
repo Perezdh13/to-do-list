@@ -33,11 +33,11 @@ function Task() {
             </tr>
           </thead>
           <tbody>
-            {data.map((task) => (
+            {data.map((item) => (
               <tr>
-                <td>{task.Name}</td>
-                <td>{task.Day}</td>
-                <td>{task.Description}</td>
+                <td>{item.Name}</td>
+                <td>{item.Day}</td>
+                <td>{item.Description}</td>
               </tr>
             ))}
           </tbody>

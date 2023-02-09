@@ -3,131 +3,148 @@
   position: absolute;
   width: 50vw;
   height: 50vh;
-  top:25vh;
-  left:25vw;
+  top: 25vh;
+  left: 25vw;
 
 }
 
 /*//////////  TASK PAGE  /////////////*/
-.task-page{
+.task-page {
   position: absolute;
   width: 70vw;
   height: 78vh;
-  top:11vh;
+  top: 11vh;
   left: 15vw;
-  background:transparent;
+  background: transparent;
 }
-.task-page h1{
+
+.task-page h1 {
   position: absolute;
-  top:10vh;
-  left:26vw;
+  top: 10vh;
+  left: 26vw;
 }
-.task-page-box-delete{
- cursor:pointer;
+
+.task-page-box-delete {
+  cursor: pointer;
 }
+
 .task-page-box {
   position: absolute;
   width: 60vw;
   height: 50vh;
-  top:20vh;
-  left:8vw;
+  top: 20vh;
+  left: 8vw;
   overflow: auto;
 }
 
 /*////////// DELETE PAGE //////////////*/
-.deleteTask-page{
+.deleteTask-page {
   position: absolute;
   width: 70vw;
   height: 78vh;
-  top:11vh;
+  top: 11vh;
   left: 15vw;
-  background:transparent;
+  background: transparent;
 }
-.deleteTask-page h1{
+
+.deleteTask-page h1 {
   position: absolute;
-  top:10vh;
-  left:26vw;
+  top: 10vh;
+  left: 26vw;
 }
-.deleteTask-page-box-delete{
- cursor:pointer;
+
+.deleteTask-page-box-delete {
+  cursor: pointer;
 }
+
 .deleteTask-page-box {
   position: absolute;
   width: 60vw;
   height: 50vh;
-  top:20vh;
-  left:8vw;
+  top: 20vh;
+  left: 8vw;
   overflow: auto;
 }
+
 .deleteTask-page-box img {
   width: 2vw;
 }
 
 /*///////// ADD TASK PAGE ///////////////////*/
-.addTask-page{
+.addTask-page {
   position: absolute;
   width: 70vw;
   height: 78vh;
-  top:11vh;
+  top: 11vh;
   left: 15vw;
   background: transparent;
-  }
-  
-  .addTask-page h1{
-    position: absolute;
-    top: 10vh;
-    left: 25vw;
-  }
-
-.addTask-page-enterBox{
-position:absolute;
-width: 60vw;
-left:5vw;
-top:23vh
 }
 
-.addTask-page-enterBox-name{
-position: absolute;
-top:3vh;
-left:8vw;
-width: 20vw;
-height: 5vh;
-}
-.addTask-page-enterBox-day{
+.addTask-page h1 {
   position: absolute;
-top:3vh;
-left:33vw;
-width: 20vw;
-height: 5vh;
-}
-.addTask-page-enterBox-description{
-  position: absolute;
-top:10vh;
-left:8vw;
-width: 45vw;
-height: 20vh;
+  top: 10vh;
+  left: 25vw;
 }
 
-.addTask-page-enterBox img{
+.addTask-page-enterBox {
   position: absolute;
-  top:40vh;
-  left:50vw;
+  width: 60vw;
+  left: 5vw;
+  top: 23vh
+}
+
+.addTask-page-enterBox-name {
+  position: absolute;
+  top: 3vh;
+  left: 8vw;
+  width: 20vw;
+  height: 5vh;
+}
+
+.addTask-page-enterBox-day {
+  position: absolute;
+  top: 3vh;
+  left: 33vw;
+  width: 20vw;
+  height: 5vh;
+}
+
+.addTask-page-enterBox-description {
+  position: absolute;
+  top: 10vh;
+  left: 8vw;
+  width: 45vw;
+  height: 20vh;
+}
+
+.addTask-page-enterBox img {
+  position: absolute;
+  top: 40vh;
+  left: 50vw;
   width: 3vw;
   cursor: pointer;
+}
+
+.addTask-page-popUp h1 {
+  position: absolute;
+  color:black;
+  width: 20vw;
+  height: 10vh;
+  top: 55vh;
+  left: 10vw;
 }
 
 
 /*////////// SUMMARY PAGE ///////////////////*/
 
-.main-summary-page{
-  background:transparent;
+.main-summary-page {
+  background: transparent;
   position: absolute;
   width: 100vw;
   height: 100vh;
- 
 }
 
-.summary-page-bar-top{
+.summary-page-bar-top {
   background: rgb(161, 86, 86);
   position: absolute;
   width: 100vw;
@@ -136,53 +153,60 @@ height: 20vh;
   justify-content: center;
   align-items: center;
 }
-.summary-page-bar-top h1{
+
+.summary-page-bar-top h1 {
   position: absolute;
   color: rgb(95, 0, 11);
-  font-style:oblique;
-  border-color: aqua; 
+  font-style: oblique;
+  border-color: aqua;
 }
-.summary-page-bar-top img{
+
+.summary-page-bar-top img {
   position: absolute;
   border-radius: 100%;
   right: 8vw;
-  top:2vh;
+  top: 2vh;
   width: 50px;
 }
 
 
-.summary-page{
-  background:transparent;
+.summary-page {
+  background: transparent;
   position: absolute;
   width: 60vw;
   height: 75vh;
   top: 15vh;
-  left:20vw;
+  left: 20vw;
   display: grid;
-  grid-template-columns: repeat(2,1fr);
-  
+  grid-template-columns: repeat(2, 1fr);
+
 }
-.summary-page-task{
- display: flex;
- align-items: center;
- justify-content: center;     
-}
-.summary-page-addTask{
+
+.summary-page-task {
   display: flex;
   align-items: center;
-  justify-content: center;  
+  justify-content: center;
 }
-.summary-page-calendar{
+
+.summary-page-addTask {
   display: flex;
   align-items: center;
-  justify-content: center;  
+  justify-content: center;
 }
-.summary-page-deleteTask{
+
+.summary-page-calendar {
   display: flex;
   align-items: center;
-  justify-content: center;  
+  justify-content: center;
 }
-.summary-page img{
+
+.summary-page-deleteTask {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.summary-page img {
   width: 80px;
 }
 
@@ -190,85 +214,90 @@ height: 20vh;
 
 
 /*///////////MAIN PAGE  /////////////////*/
-.mainPage-bar-top{
+.mainPage-bar-top {
   background: rgb(161, 86, 86);
   position: absolute;
   width: 100vw;
   height: 10vh;
 }
-.mainPage-bar-top h1{
+
+.mainPage-bar-top h1 {
   color: rgb(95, 0, 11);
-  font-style:oblique;
+  font-style: oblique;
   border-color: aqua;
 }
 
 
 
-.mainPage{
+.mainPage {
   background: transparent;
   position: absolute;
   width: 100vw;
   height: 100vh;
 }
 
-.mainPage-bar-botton{
+.mainPage-bar-botton {
   background: rgb(161, 86, 86);
   position: absolute;
   width: 100vw;
   height: 10vh;
   bottom: 0;
 }
-.mainPage-bar-botton img{
+
+.mainPage-bar-botton img {
   position: absolute;
 }
-.mainPage-bar-botton-avatar{
-  top:0vh;
-  left: 45vw;  
+
+.mainPage-bar-botton-avatar {
+  top: 0vh;
+  left: 45vw;
   border-radius: 100%;
   height: 7vh;
 }
 
-.mainPage-bar-botton-calendar{
- top:1vh;
- left:20vw;
- height: 5vh;
-}
-
-.mainPage-bar-botton-addTask{
+.mainPage-bar-botton-calendar {
   top: 1vh;
-  left:5vw;
+  left: 20vw;
   height: 5vh;
 }
 
-.mainPage-bar-botton-deleteTask{
-  top:1vh;
+.mainPage-bar-botton-addTask {
+  top: 1vh;
+  left: 5vw;
+  height: 5vh;
+}
+
+.mainPage-bar-botton-deleteTask {
+  top: 1vh;
   right: 5vw;
   height: 5vh;
 }
-.mainPage-bar-botton-task{
-  top:1vh;
+
+.mainPage-bar-botton-task {
+  top: 1vh;
   right: 20vw;
   height: 5vh;
 }
 
 
-.fondo-app{
-  position:absolute;
+.fondo-app {
+  position: absolute;
   width: 100vw;
   height: 100vh;
   left: 0vw;
-  top:0vh; 
+  top: 0vh;
 }
 
 
 
 /*////////////// SERVER DATA ///////////*/
 
-.main-page-enterData{
+.main-page-enterData {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .App {
   text-align: center;
 }

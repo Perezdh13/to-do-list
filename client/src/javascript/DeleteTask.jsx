@@ -17,7 +17,7 @@ function removeTask(id){
   setTask(updatedTasks)
 }
  
-console.info(removeTask)
+
   let navigate = useNavigate()
   useEffect(() => {
     window.onload = function () {
