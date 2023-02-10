@@ -4,9 +4,10 @@ import check from '../img/check-mark.png'
 
 function AddTask() {
 
-    let tasks = JSON.parse(localStorage.getItem("tasks")) || []
+    let data = JSON.parse(localStorage.getItem("tasks")) || []
+
     let [alertTxt, setAlertTxt] = useState("")
-    let [task, setTask] = useState([...tasks])
+    let [task, setTask] = useState([...data])
     let [name, setName] = useState("");
     let [day, setDay] = useState("");
     let [description, setDescription] = useState("");

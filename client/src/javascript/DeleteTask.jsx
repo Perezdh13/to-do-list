@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from 'react'
-import { useNavigate } from 'react-router-dom';
+import React, { useState } from 'react'
+
 import { Table} from "reactstrap"
 import deleteButton from '../img/delete.png'
 
@@ -17,13 +17,6 @@ function removeTask(id){
   setTask(updatedTasks)
 }
  
-
-  let navigate = useNavigate()
-  useEffect(() => {
-    window.onload = function () {
-      navigate("/")
-    };
-  }, [navigate]);
 
   return (
     <div className='deleteTask-page'>
