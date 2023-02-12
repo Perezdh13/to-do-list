@@ -1,29 +1,22 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import "bootstrap/dist/css/bootstrap.min.css"
-import { useNavigate } from 'react-router-dom';
 import { Table } from "reactstrap"
-import edit from "../img/edit.png"
+
 
 
 function Task() {
-  let tasks = JSON.parse(localStorage.getItem("tasks")) || []
+  let data = JSON.parse(localStorage.getItem("tasks")) || []
 
-  const [data, setData] = useState([...tasks])
+  const [task, setData] = useState([...data])
 
 
-  let navigate = useNavigate()
-  useEffect(() => {
-    window.onload = function () {
-      navigate("/")
-    };
-  }, [navigate]);
-
-  const handleUpdateDescription = (index, newDescription) => {
-    const updatedData = [...data];
+  const changeDescription = (index, newDescription) => {
+    const updatedData = [...task];
     updatedData[index].Description = newDescription;
     setData(updatedData);
     localStorage.setItem("tasks", JSON.stringify(updatedData));
   };
+
 
   return (
     <div className='task-page'>
@@ -44,14 +37,9 @@ function Task() {
                 <td>{item.Name}</td>
                 <td>{item.Day}</td>
                 <td>
-                  <input
-                  
-                    value={item.Description}
-                    onChange={(event) => handleUpdateDescription(index, event.target.value)}
+                  <textarea
+                    value={item.Description} onChange={(event) => changeDescription(index, event.target.value)}
                   />
-                </td>
-                <td>
-                  <img src={edit} alt='edit' onClick={() => handleUpdateDescription(index, item.Description)} />
                 </td>
               </tr>
             ))}

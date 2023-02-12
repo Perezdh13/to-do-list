@@ -1,16 +1,9 @@
-import React, { useEffect} from 'react'
-import { useNavigate } from 'react-router-dom';
+import React, {} from 'react'
+
+
 import febrero from '../img/febrero.png'
 
 function Calenddar() {
-
-  let navigate = useNavigate()
-    useEffect(() => {
-        window.onload = function () {
-            navigate("/")
-        };
-    }, [navigate]);
-
 
   return (
     <div className='calendar-page'>

@@ -24,29 +24,29 @@
   left: 26vw;
 }
 
-
-
 .task-page-box {
   position: absolute;
   width: 60vw;
   height: 50vh;
   top: 20vh;
-  left: 8vw;
- overflow: auto;
+  left: 7vw;
 }
-.task-page-box input{
+.task-page-box textarea{
   border: none;
   overflow: auto;
-  overflow-y: auto;
+  width: 15vw;
+  height: auto;
 }
 .task-page-box img{
   position: absolute;
   width: 2vw;
   right:5vw;
   cursor: pointer;
+  
 }
 
 /*////////// DELETE PAGE //////////////*/
+
 .deleteTask-page {
   position: absolute;
   width: 70vw;
@@ -62,9 +62,6 @@
   left: 26vw;
 }
 
-.deleteTask-page-box-delete {
-  cursor: pointer;
-}
 
 .deleteTask-page-box {
   position: absolute;
@@ -76,10 +73,12 @@
 }
 
 .deleteTask-page-box img {
-  width: 2vw;
+  width: 10px;
+  cursor: pointer;
 }
 
 /*///////// ADD TASK PAGE ///////////////////*/
+
 .addTask-page {
   position: absolute;
   width: 70vw;
@@ -130,7 +129,7 @@
   position: absolute;
   top: 40vh;
   left: 50vw;
-  width: 3vw;
+  width: 30px;
   cursor: pointer;
 }
 
@@ -216,13 +215,14 @@
 }
 
 .summary-page img {
-  width: 80px;
+  width: 90px;
 }
 
 
 
 
 /*///////////MAIN PAGE  /////////////////*/
+
 .mainPage-bar-top {
   background: rgb(161, 86, 86);
   position: absolute;
@@ -258,33 +258,33 @@
 }
 
 .mainPage-bar-botton-avatar {
-  top: 0vh;
-  left: 45vw;
+  top: 1vh;
+  left: 47vw;
   border-radius: 100%;
   height: 7vh;
 }
 
 .mainPage-bar-botton-calendar {
   top: 1vh;
-  left: 20vw;
+  left: 25vw;
   height: 5vh;
 }
 
 .mainPage-bar-botton-addTask {
   top: 1vh;
-  left: 5vw;
+  left: 10vw;
   height: 5vh;
 }
 
 .mainPage-bar-botton-deleteTask {
   top: 1vh;
-  right: 5vw;
+  right: 10vw;
   height: 5vh;
 }
 
 .mainPage-bar-botton-task {
   top: 1vh;
-  right: 20vw;
+  right: 25vw;
   height: 5vh;
 }
 

@@ -1,24 +1,17 @@
-import React, { useEffect } from 'react'
+import React, {} from 'react'
 import avatar from '../img/avatar.png'
 import addTask from '../img/newAddTask.png'
 import calendar from '../img/newCalendar.png'
 import deleteTask from '../img/newDeleteTask.png'
 import task from '../img/newList.png'
-import { useNavigate } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 
 function Summary() {
 
-  let navigate = useNavigate()
-  useEffect(() => {
-    window.onload = function () {
-      navigate("/")
-    };
-  }, [navigate]);
+ 
 
   return (
     <div className='main-summary-page'>
-
       <div className='summary-page-bar-top'>
         <h1>Reminder</h1>
         <img src={avatar} alt='avatar' />
@@ -44,7 +37,6 @@ function Summary() {
             <img className='' src={deleteTask} alt='delete task' />
           </Link>
         </div>
-
       </div>
     </div>
   )
